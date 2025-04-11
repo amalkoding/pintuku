@@ -9,7 +9,12 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+    'reset' => false,
+    'verify' => false,
+    'forgot' => false,
+]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
