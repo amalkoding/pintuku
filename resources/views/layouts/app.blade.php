@@ -15,6 +15,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('build/assets/app-wO4EqYCH.css') }}">
     <script src="{{ asset('build/assets/app-De4R3s3M.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
     <!-- Scripts -->
     {{--  @vite(['resources/sass/app.scss', 'resources/js/app.js'])  --}}
 </head>
@@ -80,6 +82,9 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 
